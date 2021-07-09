@@ -25,9 +25,21 @@ function changeBack (){
 
 function makeRed (){  
 
-    hoverButton.style.backgroundColor= "red"
+    hoverButton.style.backgroundColor= "red";
+  
+
 
   }
+function changeHoverText (){
+
+  hoverButton.innerHTML= "Good Job!"
+}
+function changeHoverBack (){
+
+  hoverButton.innerHTML= "Hover Me!"
+
+}
+
 
   function makeDefault(){
 
@@ -50,6 +62,7 @@ function makeRed (){
   hoverButton.addEventListener("mouseover",makeRed)
 
  hoverButton.addEventListener("mouseout",makeDefault)
+
 
   dblButton.addEventListener("dblclick",makeBlue)
 
