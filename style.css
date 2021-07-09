@@ -1,0 +1,154 @@
+body {
+  background-color: coral;
+}
+
+.ButtonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  min-height: 10vh;
+  margin-top: 30vh;
+  width: 50%;
+  margin-left: 23em;
+}
+
+.ButtonContainer2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 10px;
+  width: 50%;
+  margin-left: 23em;
+}
+
+/*-----------------------------BUTTON 1------------*/
+#clickMe {
+  /*margin-top: 400px;*/
+  width: 90px;
+  height: 40px;
+  border-radius: 20px;
+  border-style: none;
+  color: white;
+  background-color: blueviolet;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: all 0.35s ease;
+  cursor: pointer;
+}
+
+#clickMe:hover {
+  color: gold;
+  background-color: purple;
+  animation: bounce 1s infinite;
+}
+
+#clickMe:active {
+  width: 85px;
+  height: 35px;
+  background-color: chocolate;
+  transition: all 2ms ease;
+}
+
+@keyframes bounce {
+  20%,
+  50%,
+  80%,
+  to {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  70% {
+    transform: translateY(-15px);
+  }
+
+  90% {
+    transform: translateY(-4px);
+  }
+}
+/*-----------------------------BUTTON 2------------*/
+
+#swipeClick {
+  /*margin-top: 400px;*/
+  width: 100px;
+  height: 60px;
+  border-radius: 4px;
+  border-style: none;
+  color: white;
+  background-color: blueviolet;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: all 0.3s ease-out;
+  box-shadow: inset 0 0 0 0 gold;
+  outline: none;
+  cursor: pointer;
+}
+
+#swipeClick:hover {
+  font-size: 17px;
+  box-shadow: inset 100px 0 0 0 goldenrod;
+  color: mediumvioletred;
+  border: solid 2px rebeccapurple;
+}
+
+#swipeClick:active {
+  width: 95px;
+  height: 55px;
+  box-shadow: inset 100px 0 0 0 chocolate;
+  transition: all 2ms ease;
+}
+
+/*-----------------------------BUTTON 3------------*/
+
+#hoverMe {
+  /*margin-top: 400px;*/
+  width: 100px;
+  height: 60px;
+
+  border-style: none;
+  color: white;
+  background-color: blueviolet;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: all 0.3s ease-out;
+  box-shadow: inset 0 0 0 0 gold;
+  outline: none;
+  cursor: pointer;
+}
+
+/*-----------------------------BUTTON 4------------*/
+
+.dblMe {
+  /*margin-top: 400px;*/
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  border-style: none;
+  color: white;
+  background-color: blueviolet;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: all 0.3s ease-out;
+  box-shadow: inset 0 0 0 0 gold;
+  outline: none;
+  cursor: pointer;
+}
+
+.dblMeDefault {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  border-style: none;
+  color: white;
+  background-color: cadetblue;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: all 0.3s ease-out;
+  box-shadow: inset 0 0 0 0 gold;
+  outline: none;
+  cursor: pointer;
+}
