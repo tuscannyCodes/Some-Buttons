@@ -82,6 +82,8 @@ function changeHoverBack (){
 
     evaporateBtn.style.backgroundColor= "rgba(0,0,0,0)";
     evaporateBtn.style.color= "rgba(0,0,0,0)";
+
+    evaporateBtn.style.cursor= "default";
   }
  
 
