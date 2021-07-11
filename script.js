@@ -10,6 +10,10 @@ const bgButton = document.querySelector(".bgButton");
 
 const theBody = document.getElementsByTagName("body")[0];
 
+const spinBtn = document.querySelector(".spinBtn");
+
+const evaporateBtn = document.querySelector(".evaporateBtn");
+
 //VARIABLES END
 
 
@@ -65,6 +69,20 @@ function changeHoverBack (){
     console.log("hello")
   }
 
+
+  function spin(){
+
+    spinBtn.style.transform = "rotate(360deg)"; 
+   
+
+  }
+
+
+  function evaportate(){
+
+    evaporateBtn.style.backgroundColor= "rgba(0,0,0,0)";
+    evaporateBtn.style.color= "rgba(0,0,0,0)";
+  }
  
 
 
@@ -79,4 +97,8 @@ function changeHoverBack (){
 
 
   bgButton.addEventListener("click",ChangeBackgroundColor)
+
+  spinBtn.addEventListener("click", spin)
+
+  evaporateBtn.addEventListener("click", evaportate)
 
