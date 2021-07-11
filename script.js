@@ -6,6 +6,10 @@ const hoverButton = document.getElementById("hoverMe");
 
 const dblButton = document.querySelector(".dblMe");
 
+const bgButton = document.querySelector(".bgButton");
+
+const theBody = document.getElementsByTagName("body")[0];
+
 //VARIABLES END
 
 
@@ -54,6 +58,13 @@ function changeHoverBack (){
       
   }
 
+  function ChangeBackgroundColor (){
+
+    theBody.classList.toggle("bodyColorChange");
+
+    console.log("hello")
+  }
+
  
 
 
@@ -65,4 +76,7 @@ function changeHoverBack (){
 
 
   dblButton.addEventListener("dblclick",makeBlue)
+
+
+  bgButton.addEventListener("click",ChangeBackgroundColor)
 
