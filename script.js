@@ -14,6 +14,10 @@ const spinBtn = document.querySelector(".spinBtn");
 
 const evaporateBtn = document.querySelector(".evaporateBtn");
 
+const morphBtn = document.querySelector(".morphBtn");
+
+let counter = 0;
+
 //VARIABLES END
 
 
@@ -73,9 +77,10 @@ function changeHoverBack (){
   function spin(){
 
     spinBtn.style.transform = "rotate(360deg)"; 
-   
+    
+}
 
-  }
+  
 
 
   function evaportate(){
@@ -86,6 +91,32 @@ function changeHoverBack (){
     evaporateBtn.style.cursor= "default";
   }
  
+  const morph = ()=> {
+
+    morphBtn.style.borderRadius= "50%";
+    counter++;
+    if(counter == 2) {
+
+      
+      morphBtn.style.width= "120px";
+
+    }
+    if(counter == 3) {
+
+      morphBtn.style.borderRadius= "0%";
+      morphBtn.style.width= "120px";
+
+    }
+    if(counter == 4) {
+
+      morphBtn.style.borderRadius= "0"
+      morphBtn.style.width= "80px";
+      counter = 0;
+
+    }
+
+
+  }
 
 
   //EVENTLISTENER
@@ -104,3 +135,4 @@ function changeHoverBack (){
 
   evaporateBtn.addEventListener("click", evaportate)
 
+  morphBtn.addEventListener("click",morph)

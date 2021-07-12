@@ -137,6 +137,7 @@ button {
   width: 100px;
   height: 60px;
   border-radius: 20px;
+  position: absolute;
 }
 
 .bgButton:hover {
@@ -169,4 +170,12 @@ button {
   height: 80px;
   border-radius: 20px;
   transition: all 7s ease-out;
+}
+
+/*-----------------------------BUTTON 8------------*/
+
+.morphBtn {
+  width: 80px;
+  height: 80px;
+  transition: all 1s ease-out;
 }
