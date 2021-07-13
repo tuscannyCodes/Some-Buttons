@@ -111,6 +111,7 @@ button {
   /*margin-top: 400px;*/
   width: 100px;
   height: 60px;
+  cursor: default;
 }
 
 /*-----------------------------BUTTON 4------------*/

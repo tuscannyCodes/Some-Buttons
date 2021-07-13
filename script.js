@@ -25,7 +25,7 @@ let counter = 0;
 
 function change (){
 
-    button.innerHTML= "Do it!"
+    button.textContent= "Do it!"
 
 }
 
@@ -77,6 +77,8 @@ function changeHoverBack (){
   function spin(){
 
     spinBtn.style.transform = "rotate(360deg)"; 
+
+    setTimeout(() => spinBtn.style.transform = "rotate(0deg)", 0700)
     
 }
 
@@ -89,12 +91,18 @@ function changeHoverBack (){
     evaporateBtn.style.color= "rgba(0,0,0,0)";
 
     evaporateBtn.style.cursor= "default";
+
+    setTimeout(() => evaporateBtn.style.backgroundColor = "rgba(138, 43, 226,100)", 10000)
+
+    setTimeout(() => evaporateBtn.style.color = "rgba(255,255,255,100)", 10000)
+
   }
  
   const morph = ()=> {
 
     morphBtn.style.borderRadius= "50%";
     counter++;
+    
     if(counter == 2) {
 
       
@@ -105,6 +113,7 @@ function changeHoverBack (){
 
       morphBtn.style.borderRadius= "0%";
       morphBtn.style.width= "120px";
+      
 
     }
     if(counter == 4) {
@@ -121,7 +130,11 @@ function changeHoverBack (){
 
   //EVENTLISTENER
 
-  hoverButton.addEventListener("mouseover",makeRed)
+button.addEventListener("mouseover", change)
+
+button.addEventListener("mouseout", changeBack)
+
+hoverButton.addEventListener("mouseover",makeRed)
 
  hoverButton.addEventListener("mouseout",makeDefault)
 
