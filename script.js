@@ -16,6 +16,8 @@ const evaporateBtn = document.querySelector(".evaporateBtn");
 
 const morphBtn = document.querySelector(".morphBtn");
 
+const buttons = document.button;
+
 let counter = 0;
 
 //VARIABLES END
@@ -23,43 +25,43 @@ let counter = 0;
 
 // FUNCTIONS 
 
-function change (){
+const change = () => {
 
     button.textContent= "Do it!"
 
 }
 
-function changeBack (){
+const changeBack= () => {
 
     button.innerHTML= " Click Me!"
 }
 
 
-function makeRed (){  
+const makeRed = () => {  
 
     hoverButton.style.backgroundColor= "red";
   
 
 
   }
-function changeHoverText (){
+const changeHoverText = () => {
 
   hoverButton.innerHTML= "Good Job!"
 }
-function changeHoverBack (){
+const changeHoverBack= () =>{
 
   hoverButton.innerHTML= "Hover Me!"
 
 }
 
 
-  function makeDefault(){
+  const makeDefault= () => {
 
     hoverButton.style.backgroundColor= "blueviolet"
 
   }
 
-  function makeBlue (){
+  const makeBlue= () => {
    
         dblButton.classList.toggle("dblMeDefault");
         
@@ -67,15 +69,14 @@ function changeHoverBack (){
       
   }
 
-  function ChangeBackgroundColor (){
+  const ChangeBackgroundColor= () => {
 
     theBody.classList.toggle("bodyColorChange");
 
-    console.log("hello")
   }
 
 
-  function spin(){
+  const spin= () => {
 
     spinBtn.style.transform = "rotate(360deg)"; 
 
@@ -86,7 +87,7 @@ function changeHoverBack (){
   
 
 
-  function evaportate(){
+  const evaportate= () =>{
 
     evaporateBtn.style.backgroundColor= "rgba(0,0,0,0)";
     evaporateBtn.style.color= "rgba(0,0,0,0)";
