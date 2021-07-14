@@ -18,6 +18,8 @@ const morphBtn = document.querySelector(".morphBtn");
 
 const buttons = document.button;
 
+const threedBtn = document.querySelector(".threedBtn");
+
 let counter = 0;
 
 //VARIABLES END
@@ -129,7 +131,15 @@ const changeHoverBack= () =>{
 
   }
 
+  const threeDTextChange = () => {
 
+    threedBtn.textContent= "Do it!"
+  }
+
+  const threeDTextChangeBack = () => {
+
+    threedBtn.textContent= "Click Me!"
+  }
   //EVENTLISTENER
 
 button.addEventListener("mouseover", change)
@@ -151,3 +161,6 @@ hoverButton.addEventListener("mouseover",makeRed)
   evaporateBtn.addEventListener("click", evaportate)
 
   morphBtn.addEventListener("click",morph)
+
+  threedBtn.addEventListener("mouseover",threeDTextChange)
+  threedBtn.addEventListener("mouseout",threeDTextChangeBack)
