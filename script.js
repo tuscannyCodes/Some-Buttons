@@ -158,7 +158,11 @@ const changeHoverBack= () =>{
   biggerCircleBtn.style.width = `${currentWidth}px` 
   biggerCircleBtn.style.height = `${currentHeight}px` 
   biggerCircleBtn.textContent = "again!"
+if( currentWidth >= 80){
 
+  biggerCircleBtn.textContent = "Keep going!"
+
+}
   if(currentWidth >= 102 ) {
 
     currentWidth = 100;
