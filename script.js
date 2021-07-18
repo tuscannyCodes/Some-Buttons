@@ -29,6 +29,8 @@ let currentWidth = 40;
 let currentHeight = 40; 
 
 const smallerBtn = document.querySelector(".smallerBtn");
+
+let enableSmallerBtn = 0;
 //VARIABLES END
 
 
@@ -162,6 +164,7 @@ const changeHoverBack= () =>{
     currentWidth = 100;
     currentHeight = 100;
 
+    enableSmallerBtn += 1
     biggerCircleBtn.textContent = "Click George"
     smallerBtn.textContent = "Im George"
     smallerBtn.style.backgroundColor = "gold"
@@ -175,13 +178,16 @@ const changeHoverBack= () =>{
 
 
   const makeSlightlySmaller = () => {
-
+if(enableSmallerBtn){
     currentWidth -= 4;
     currentHeight -= 4;
 
 
     biggerCircleBtn.style.width = `${currentWidth}px` 
     biggerCircleBtn.style.height = `${currentHeight}px` 
+
+    
+}
     
     if(currentWidth <= 42){
 
@@ -190,6 +196,8 @@ currentHeight = 42;
 biggerCircleBtn.textContent = "Click Me!"
 smallerBtn.textContent = "..."
 smallerBtn.style.backgroundColor = "blueviolet"
+enableSmallerBtn = 0;
+
     }
 
   }
