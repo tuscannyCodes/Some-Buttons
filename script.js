@@ -22,6 +22,13 @@ const threedBtn = document.querySelector(".threedBtn");
 
 let counter = 0;
 
+const biggerCircleBtn = document.querySelector(".biggerCircleBtn");
+
+
+let currentWidth = 40;
+let currentHeight = 40; 
+
+const smallerBtn = document.querySelector(".smallerBtn");
 //VARIABLES END
 
 
@@ -140,6 +147,52 @@ const changeHoverBack= () =>{
 
     threedBtn.textContent= "Click Me!"
   }
+
+  const makeSlightlyBigger = () => {
+
+    currentWidth += 4;
+    currentHeight += 4;
+
+  biggerCircleBtn.style.width = `${currentWidth}px` 
+  biggerCircleBtn.style.height = `${currentHeight}px` 
+  biggerCircleBtn.textContent = "again!"
+
+  if(currentWidth >= 102 ) {
+
+    currentWidth = 100;
+    currentHeight = 100;
+
+    biggerCircleBtn.textContent = "Click George"
+    smallerBtn.textContent = "Im George"
+    smallerBtn.style.backgroundColor = "gold"
+  }
+
+
+
+  console.log(currentWidth + 2)
+
+  }
+
+
+  const makeSlightlySmaller = () => {
+
+    currentWidth -= 4;
+    currentHeight -= 4;
+
+
+    biggerCircleBtn.style.width = `${currentWidth}px` 
+    biggerCircleBtn.style.height = `${currentHeight}px` 
+    
+    if(currentWidth <= 42){
+
+currentWidth = 42;
+currentHeight = 42;
+biggerCircleBtn.textContent = "Click Me!"
+smallerBtn.textContent = "..."
+smallerBtn.style.backgroundColor = "blueviolet"
+    }
+
+  }
   //EVENTLISTENER
 
 button.addEventListener("mouseover", change)
@@ -164,3 +217,6 @@ hoverButton.addEventListener("mouseover",makeRed)
 
   threedBtn.addEventListener("mouseover",threeDTextChange)
   threedBtn.addEventListener("mouseout",threeDTextChangeBack)
+
+  biggerCircleBtn.addEventListener("click",makeSlightlyBigger)
+  smallerBtn.addEventListener("click",makeSlightlySmaller)
