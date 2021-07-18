@@ -28,6 +28,9 @@ const biggerCircleBtn = document.querySelector(".biggerCircleBtn");
 let currentWidth = 40;
 let currentHeight = 40; 
 
+let currentWidthB = 40;
+let currentHeightB = 40;
+
 const smallerBtn = document.querySelector(".smallerBtn");
 
 let enableSmallerBtn = 0;
@@ -75,7 +78,12 @@ const changeHoverBack= () =>{
   const makeBlue= () => {
    
         dblButton.classList.toggle("dblMeDefault");
-        
+        dblButton.textContent = "good job!"
+        if(dblButton.classList == "dblMe"){
+
+          dblButton.textContent = "Click me!"
+
+        }
     
       
   }
@@ -152,9 +160,10 @@ const changeHoverBack= () =>{
 
   const makeSlightlyBigger = () => {
 
-    currentWidth += 4;
-    currentHeight += 4;
+    currentWidth += 8;
+    currentHeight += 8;
 
+  
   biggerCircleBtn.style.width = `${currentWidth}px` 
   biggerCircleBtn.style.height = `${currentHeight}px` 
   biggerCircleBtn.textContent = "again!"
@@ -183,8 +192,8 @@ if( currentWidth >= 80){
 
   const makeSlightlySmaller = () => {
 if(enableSmallerBtn){
-    currentWidth -= 4;
-    currentHeight -= 4;
+    currentWidth -= 8;
+    currentHeight -= 8;
 
 
     biggerCircleBtn.style.width = `${currentWidth}px` 
