@@ -81,7 +81,7 @@ const changeHoverBack= () =>{
         dblButton.textContent = "good job!"
         if(dblButton.classList == "dblMe"){
 
-          dblButton.textContent = "Click me!"
+          dblButton.textContent = "Double Click me!"
 
         }
     

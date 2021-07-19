@@ -204,15 +204,18 @@ button {
 /*-----------------------------BUTTON 10 & 11------------*/
 
 .biggerCircleBtn {
+  position: fixed;
   border-radius: 50%;
   width: 40px;
   height: 40px;
 }
 
 .smallerBtn {
+  position: fixed;
   border-radius: 50%;
   width: 102px;
   height: 102px;
+  margin-left: -90px;
 }
 
 .smallerBtn:hover {
