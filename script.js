@@ -34,6 +34,8 @@ let currentHeightB = 40;
 const smallerBtn = document.querySelector(".smallerBtn");
 
 let enableSmallerBtn = 0;
+
+const shiftClickButton = document.querySelector("#shiftClick");
 //VARIABLES END
 
 
@@ -241,3 +243,10 @@ hoverButton.addEventListener("mouseover",makeRed)
 
   biggerCircleBtn.addEventListener("click",makeSlightlyBigger)
   smallerBtn.addEventListener("click",makeSlightlySmaller)
+
+  shiftClickButton.addEventListener("click", function(e) {
+    if (e.shiftKey) {
+      shiftClickButton.classList.toggle("shiftClickToggle");
+console.log("shift works")
+    }
+  })

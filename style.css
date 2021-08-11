@@ -245,14 +245,20 @@ button {
 #shiftClick:hover {
   animation: swing 1s ease;
   animation-iteration-count: 1;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.shiftClickToggle {
+  background-color: firebrick;
 }
 
 @keyframes swing {
   15% {
-    transform: translateX(5px);
+    transform: translateX(10px);
+    transform: translatey(-3px);
   }
   30% {
-    transform: translateX(-5px);
+    transform: translateX(-15px);
   }
   50% {
     transform: translateX(3px);
