@@ -31,6 +31,18 @@
   margin-bottom: 1em;
 }
 
+.buttonContainerA {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 1px;
+  width: 50%;
+  margin-left: 23em;
+  margin-top: 3em;
+  margin-bottom: -12em;
+}
+
 button {
   border-style: none;
   color: white;
@@ -221,4 +233,37 @@ button {
 .smallerBtn:hover {
   background-color: rgb(90, 28, 148);
   color: black;
+}
+
+/*-----------------------------BUTTON 12------------*/
+
+#shiftClick {
+  height: 50px;
+  border-radius: 5px;
+}
+
+#shiftClick:hover {
+  animation: swing 1s ease;
+  animation-iteration-count: 1;
+}
+
+@keyframes swing {
+  15% {
+    transform: translateX(5px);
+  }
+  30% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(3px);
+  }
+  65% {
+    transform: translateX(-3px);
+  }
+  80% {
+    transform: translateX(2px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
